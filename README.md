@@ -1,2 +1,2 @@
 # CryptoSafelink
-Safelink dengan Kripto Enkripsi
+Safelink dengan Kripto Enkripsi oleh Kareel Kun
