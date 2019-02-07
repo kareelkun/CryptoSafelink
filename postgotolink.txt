@@ -53,10 +53,10 @@ gotolink.on("click",function(){
 var realurl = aesCrypto.decrypt(KareeICryptOCOnvert($.urlParam('kareeI')),KareeICryptOCOnvert('root'));
 if( realurl.indexOf("http://") == 0 || realurl.indexOf("https://") == 0 ) {
 window.open(realurl, '_blank');
-window.location.href=generatePOPupURL();
+window.open(generatePOPupURL(), '_blank');
 } else {
 window.open('http://' + realurl, '_blank');
-window.location.href=generatePOPupURL();
+window.open(generatePOPupURL(), '_blank');
 // window.location.href="http://" + realurl; //
 }
 });					
