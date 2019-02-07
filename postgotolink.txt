@@ -33,7 +33,7 @@ links[i] = link;
 var randindex = Math.random() * links.length; 
 randindex = parseInt(randindex);
 }
-resultgenerate = links[randindex] + "#?kareeI=" + aesCrypto.encrypt(KareeICryptOCOnvert(generateurl),KareeICryptOCOnvert('root'));
+resultgenerate = links[randindex] + "?kareeI=" + aesCrypto.encrypt(KareeICryptOCOnvert(generateurl),KareeICryptOCOnvert('root'));
 generateloading.addClass('hidden');
 generatelink.removeClass('hidden');
 resulturl.val(resultgenerate);
@@ -42,7 +42,7 @@ resulturl.val('Tidak ada hasil!');
 }
 },
 error: function() {
-resulturl.val('Gagal memuat feed!');
+resulturl.val('Gagal memuat URL-Aman!');
 }
 });
 });
