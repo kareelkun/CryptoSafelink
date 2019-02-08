@@ -67,7 +67,12 @@ return null;
 else{
 return decodeURI(results[1]) || 0;
 }
-}		
+}
+var stlhdiConvert = aesCrypto.decrypt(KareeICryptOCOnvert($.urlParam('kareeI')),KareeICryptOCOnvert('root'));
+var stlhdiConvertPotong = stlhdiConvert.split('|kareel|');
+if (stlhdiConvertPotong[1] != ''){
+} else {
+}
 var getlink = $("#getlink"),
 gotolink = $("#gotolink"),
 timer = $('#timer');
