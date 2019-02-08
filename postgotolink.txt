@@ -1,3 +1,21 @@
+<script type="text/javascript">
+//<![CDATA[
+var KConfig = {
+    homeKAREEL : 'https://amankanurl.blogspot.com', // ganti dengan url homepage anda
+    waktuGETLINK : 10, // waktu menuju ke pembuatan link
+    GETLINKtext : 'Get Link', // kata menuju ke pembuatan link
+    waktuGOTOLINK : 5, // waktu membuat link 
+    GOTOLINKload : 'Please Wait', // kata tunggu saat membuat link
+    GOTOLINKtext : 'Go to link', // kata saat link tujuan sudah dibuat
+    ADblock : true, // true aktifkan dan false nonaktif adblock browser
+    ADblocktext : true, // kata saat adblock browser aktif
+    openlinkNEWTAB : true, // link tujuan buka di TAB baru browser
+    linkCOPY : 'Salin URL-Aman', // kata sevelum link disalin 
+    linkCOPYC : 'URL-Aman disalin ke Clipboard', // kata sevelum link disalin 
+    errorINPUTURL : 'Please input valid URL' // kata validasi masukan link 
+}
+//]]>
+</script>
 <script type='text/javascript'>
 //<![CDATA[
 $(document).ready(function(){
@@ -10,7 +28,7 @@ if (generateurl == "") {
 $("#generateurl").focus();
 return false;
 }
-$("#copytoclipboard").html("<span class='fa fa-floppy-o'></span> Salin URL-Aman");
+$("#copytoclipboard").html("<span class='fa fa-floppy-o'></span> "+KConfig["linkCOPY"]+"");
 generateloading.removeClass('hidden');
 generatelink.addClass('hidden');
 $.ajax({
